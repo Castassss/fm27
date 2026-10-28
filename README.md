@@ -37,4 +37,10 @@ Em Explorar clubes é possível importar um array JSON com `name`, `country` e `
 
 Para uma base completa: obter uma fonte autorizada, confirmar a edição e versão do jogo, distinguir ligas jogáveis de ligas apenas visíveis e validar clubes por divisão. Não usar esta demonstração como inventário de equipas jogáveis. Não são usados emblemas oficiais; os escudos são monogramas gráficos.
 
-Sem afiliação à Sports Interactive. Fontes Google são opcionais; existem fontes locais de fallback.
+Sem afiliação à Sports Interactive. A interface usa fontes do sistema e não precisa de serviços de fontes externos.
+
+## Aleatoriedade e auditoria
+
+Cada clube elegível tem probabilidade de 1/N de ser o último sobrevivente. Cada sorteio usa novos números criptográficos, sem pesos por nome, reputação ou histórico. O mesmo clube pode ganhar várias vezes seguidas. Impedir repetições alteraria as probabilidades. A interface mostra a probabilidade inicial por clube no resumo do pote.
+
+Executar `npm run audit:randomness` para testar o motor de produção em 660 000 sorteios de vários potes. Os resultados são diagnósticos e variam em cada execução; não se deve esperar contagens exatamente iguais. Consultar [a auditoria e as contagens observadas](docs/randomness-audit.md).

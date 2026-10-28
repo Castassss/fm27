@@ -150,10 +150,18 @@ function renderSetup() {
   const duration = Math.ceil(
     (Math.max(0, candidates.length - 1) * 1.7) / speed,
   );
+  const chance = candidates.length
+    ? (100 / candidates.length).toLocaleString("pt-PT", {
+        maximumFractionDigits: candidates.length > 100 ? 4 : 2,
+      })
+    : "0";
+  $("#pool-description").title = candidates.length
+    ? `Cada clube tem 1 em ${candidates.length} de ganhar. O histórico não altera as probabilidades.`
+    : "Sem clubes elegíveis.";
   $("#pool-description").textContent =
     candidates.length < 2
       ? "Seleciona pelo menos 2 para eliminar."
-      : `${candidates.length - 1} eliminações · ~${duration < 60 ? duration + " s" : Math.ceil(duration / 60) + " min"} · chances iguais`;
+      : `${chance}% por clube · ~${duration < 60 ? duration + " s" : Math.ceil(duration / 60) + " min"}`;
   const shortlist = new Set(state.shortlist),
     excluded = new Set(state.excluded);
   $("#list-count").textContent = clubs.filter((c) =>
@@ -284,7 +292,8 @@ function configure() {
 }
 function view(name) {
   if (running()) {
-    if (name !== "draw") toast("Conclui ou cancela o sorteio antes de sair da sala.");
+    if (name !== "draw")
+      toast("Conclui ou cancela o sorteio antes de sair da sala.");
     return;
   }
   document

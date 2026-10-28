@@ -1,0 +1,1416 @@
+{
+  "generatedAt": "2026-10-28T13:44:36.901Z",
+  "algorithm": "Production Fisher–Yates + native crypto.getRandomValues + rejection sampling",
+  "totalDraws": 660000,
+  "note": "A simulation is diagnostic evidence, not a proof of fairness. Independent draws may repeat winners. No history, name, reputation or balancing weights are used.",
+  "results": [
+    {
+      "name": "Liga Portugal",
+      "clubs": 12,
+      "draws": 120000,
+      "expectedPercent": 8.333333333333334,
+      "winners": [
+        {
+          "name": "Sporting CP",
+          "wins": 10140,
+          "percent": 8.45
+        },
+        {
+          "name": "FC Porto",
+          "wins": 10075,
+          "percent": 8.395833333333334
+        },
+        {
+          "name": "SL Benfica",
+          "wins": 10023,
+          "percent": 8.3525
+        },
+        {
+          "name": "SC Braga",
+          "wins": 9951,
+          "percent": 8.2925
+        },
+        {
+          "name": "Vitória SC",
+          "wins": 10046,
+          "percent": 8.371666666666666
+        },
+        {
+          "name": "Boavista",
+          "wins": 9998,
+          "percent": 8.331666666666667
+        },
+        {
+          "name": "Rio Ave",
+          "wins": 9980,
+          "percent": 8.316666666666666
+        },
+        {
+          "name": "FC Famalicão",
+          "wins": 9962,
+          "percent": 8.301666666666666
+        },
+        {
+          "name": "Moreirense",
+          "wins": 9990,
+          "percent": 8.325
+        },
+        {
+          "name": "Gil Vicente",
+          "wins": 9948,
+          "percent": 8.29
+        },
+        {
+          "name": "Estoril Praia",
+          "wins": 9968,
+          "percent": 8.306666666666667
+        },
+        {
+          "name": "Santa Clara",
+          "wins": 9919,
+          "percent": 8.265833333333333
+        }
+      ],
+      "maxWinnerDeviationSigma": 1.462252310027862,
+      "maxPositionDeviationSigma": 3.4154036098507916,
+      "repeatedWinners": 10013,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Liga Portugal — ordem invertida",
+      "clubs": 12,
+      "draws": 120000,
+      "expectedPercent": 8.333333333333334,
+      "winners": [
+        {
+          "name": "Santa Clara",
+          "wins": 9842,
+          "percent": 8.201666666666666
+        },
+        {
+          "name": "Estoril Praia",
+          "wins": 9934,
+          "percent": 8.278333333333334
+        },
+        {
+          "name": "Gil Vicente",
+          "wins": 9971,
+          "percent": 8.309166666666666
+        },
+        {
+          "name": "Moreirense",
+          "wins": 10017,
+          "percent": 8.3475
+        },
+        {
+          "name": "FC Famalicão",
+          "wins": 10081,
+          "percent": 8.400833333333333
+        },
+        {
+          "name": "Rio Ave",
+          "wins": 10187,
+          "percent": 8.489166666666666
+        },
+        {
+          "name": "Boavista",
+          "wins": 9893,
+          "percent": 8.244166666666667
+        },
+        {
+          "name": "Vitória SC",
+          "wins": 10052,
+          "percent": 8.376666666666667
+        },
+        {
+          "name": "SC Braga",
+          "wins": 10101,
+          "percent": 8.4175
+        },
+        {
+          "name": "SL Benfica",
+          "wins": 9953,
+          "percent": 8.294166666666667
+        },
+        {
+          "name": "FC Porto",
+          "wins": 10060,
+          "percent": 8.383333333333333
+        },
+        {
+          "name": "Sporting CP",
+          "wins": 9909,
+          "percent": 8.2575
+        }
+      ],
+      "maxWinnerDeviationSigma": 1.9531512998229297,
+      "maxPositionDeviationSigma": 2.256046421185844,
+      "repeatedWinners": 10126,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Inglaterra",
+      "clubs": 12,
+      "draws": 24000,
+      "expectedPercent": 8.333333333333334,
+      "winners": [
+        {
+          "name": "Arsenal",
+          "wins": 2114,
+          "percent": 8.808333333333334
+        },
+        {
+          "name": "Liverpool",
+          "wins": 1950,
+          "percent": 8.125
+        },
+        {
+          "name": "Manchester City",
+          "wins": 2021,
+          "percent": 8.420833333333333
+        },
+        {
+          "name": "Manchester United",
+          "wins": 1962,
+          "percent": 8.175
+        },
+        {
+          "name": "Chelsea",
+          "wins": 1973,
+          "percent": 8.220833333333333
+        },
+        {
+          "name": "Tottenham Hotspur",
+          "wins": 2030,
+          "percent": 8.458333333333334
+        },
+        {
+          "name": "Aston Villa",
+          "wins": 1999,
+          "percent": 8.329166666666667
+        },
+        {
+          "name": "Newcastle United",
+          "wins": 1997,
+          "percent": 8.320833333333333
+        },
+        {
+          "name": "Brighton",
+          "wins": 1940,
+          "percent": 8.083333333333334
+        },
+        {
+          "name": "Everton",
+          "wins": 1999,
+          "percent": 8.329166666666667
+        },
+        {
+          "name": "Nottingham Forest",
+          "wins": 2017,
+          "percent": 8.404166666666667
+        },
+        {
+          "name": "West Ham United",
+          "wins": 1998,
+          "percent": 8.325
+        }
+      ],
+      "maxWinnerDeviationSigma": 2.6624663890324087,
+      "maxPositionDeviationSigma": 3.549955185376545,
+      "repeatedWinners": 2037,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Espanha",
+      "clubs": 10,
+      "draws": 24000,
+      "expectedPercent": 10,
+      "winners": [
+        {
+          "name": "Real Madrid",
+          "wins": 2370,
+          "percent": 9.875
+        },
+        {
+          "name": "FC Barcelona",
+          "wins": 2460,
+          "percent": 10.25
+        },
+        {
+          "name": "Atlético de Madrid",
+          "wins": 2408,
+          "percent": 10.033333333333333
+        },
+        {
+          "name": "Athletic Club",
+          "wins": 2338,
+          "percent": 9.741666666666667
+        },
+        {
+          "name": "Real Sociedad",
+          "wins": 2360,
+          "percent": 9.833333333333334
+        },
+        {
+          "name": "Real Betis",
+          "wins": 2343,
+          "percent": 9.7625
+        },
+        {
+          "name": "Sevilla",
+          "wins": 2430,
+          "percent": 10.125
+        },
+        {
+          "name": "Valencia",
+          "wins": 2493,
+          "percent": 10.3875
+        },
+        {
+          "name": "Villarreal",
+          "wins": 2352,
+          "percent": 9.8
+        },
+        {
+          "name": "Girona",
+          "wins": 2446,
+          "percent": 10.191666666666666
+        }
+      ],
+      "maxWinnerDeviationSigma": 2.001041395540499,
+      "maxPositionDeviationSigma": 2.001041395540499,
+      "repeatedWinners": 2336,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Itália",
+      "clubs": 10,
+      "draws": 24000,
+      "expectedPercent": 10,
+      "winners": [
+        {
+          "name": "Inter",
+          "wins": 2462,
+          "percent": 10.258333333333333
+        },
+        {
+          "name": "AC Milan",
+          "wins": 2393,
+          "percent": 9.970833333333333
+        },
+        {
+          "name": "Juventus",
+          "wins": 2360,
+          "percent": 9.833333333333334
+        },
+        {
+          "name": "Napoli",
+          "wins": 2418,
+          "percent": 10.075
+        },
+        {
+          "name": "AS Roma",
+          "wins": 2367,
+          "percent": 9.8625
+        },
+        {
+          "name": "Lazio",
+          "wins": 2375,
+          "percent": 9.895833333333334
+        },
+        {
+          "name": "Atalanta",
+          "wins": 2383,
+          "percent": 9.929166666666667
+        },
+        {
+          "name": "Fiorentina",
+          "wins": 2473,
+          "percent": 10.304166666666667
+        },
+        {
+          "name": "Bologna",
+          "wins": 2346,
+          "percent": 9.775
+        },
+        {
+          "name": "Torino",
+          "wins": 2423,
+          "percent": 10.095833333333333
+        }
+      ],
+      "maxWinnerDeviationSigma": 1.5707099126285635,
+      "maxPositionDeviationSigma": 3.6578176047514495,
+      "repeatedWinners": 2371,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Alemanha",
+      "clubs": 8,
+      "draws": 24000,
+      "expectedPercent": 12.5,
+      "winners": [
+        {
+          "name": "Bayern München",
+          "wins": 2948,
+          "percent": 12.283333333333333
+        },
+        {
+          "name": "Borussia Dortmund",
+          "wins": 3044,
+          "percent": 12.683333333333334
+        },
+        {
+          "name": "Bayer Leverkusen",
+          "wins": 2989,
+          "percent": 12.454166666666667
+        },
+        {
+          "name": "RB Leipzig",
+          "wins": 3003,
+          "percent": 12.5125
+        },
+        {
+          "name": "Eintracht Frankfurt",
+          "wins": 3028,
+          "percent": 12.616666666666667
+        },
+        {
+          "name": "VfB Stuttgart",
+          "wins": 2960,
+          "percent": 12.333333333333334
+        },
+        {
+          "name": "Werder Bremen",
+          "wins": 3075,
+          "percent": 12.8125
+        },
+        {
+          "name": "Hamburger SV",
+          "wins": 2953,
+          "percent": 12.304166666666667
+        }
+      ],
+      "maxWinnerDeviationSigma": 1.4638501094227996,
+      "maxPositionDeviationSigma": 2.5373401896661862,
+      "repeatedWinners": 3003,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "França",
+      "clubs": 8,
+      "draws": 24000,
+      "expectedPercent": 12.5,
+      "winners": [
+        {
+          "name": "Paris Saint-Germain",
+          "wins": 2954,
+          "percent": 12.308333333333334
+        },
+        {
+          "name": "Olympique de Marseille",
+          "wins": 3046,
+          "percent": 12.691666666666666
+        },
+        {
+          "name": "Olympique Lyonnais",
+          "wins": 3003,
+          "percent": 12.5125
+        },
+        {
+          "name": "AS Monaco",
+          "wins": 3010,
+          "percent": 12.541666666666666
+        },
+        {
+          "name": "Lille",
+          "wins": 2972,
+          "percent": 12.383333333333333
+        },
+        {
+          "name": "OGC Nice",
+          "wins": 3068,
+          "percent": 12.783333333333333
+        },
+        {
+          "name": "RC Lens",
+          "wins": 2991,
+          "percent": 12.4625
+        },
+        {
+          "name": "Stade Rennais",
+          "wins": 2956,
+          "percent": 12.316666666666666
+        }
+      ],
+      "maxWinnerDeviationSigma": 1.327224099210005,
+      "maxPositionDeviationSigma": 2.7130022027969223,
+      "repeatedWinners": 2975,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Países Baixos",
+      "clubs": 6,
+      "draws": 24000,
+      "expectedPercent": 16.666666666666668,
+      "winners": [
+        {
+          "name": "Ajax",
+          "wins": 4036,
+          "percent": 16.816666666666666
+        },
+        {
+          "name": "PSV",
+          "wins": 3908,
+          "percent": 16.283333333333335
+        },
+        {
+          "name": "Feyenoord",
+          "wins": 4088,
+          "percent": 17.033333333333335
+        },
+        {
+          "name": "AZ Alkmaar",
+          "wins": 3982,
+          "percent": 16.591666666666665
+        },
+        {
+          "name": "FC Utrecht",
+          "wins": 4034,
+          "percent": 16.808333333333334
+        },
+        {
+          "name": "FC Twente",
+          "wins": 3952,
+          "percent": 16.466666666666665
+        }
+      ],
+      "maxWinnerDeviationSigma": 1.5934867429633672,
+      "maxPositionDeviationSigma": 1.5934867429633672,
+      "repeatedWinners": 3967,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Brasil",
+      "clubs": 10,
+      "draws": 24000,
+      "expectedPercent": 10,
+      "winners": [
+        {
+          "name": "Flamengo",
+          "wins": 2509,
+          "percent": 10.454166666666667
+        },
+        {
+          "name": "Palmeiras",
+          "wins": 2339,
+          "percent": 9.745833333333334
+        },
+        {
+          "name": "São Paulo",
+          "wins": 2415,
+          "percent": 10.0625
+        },
+        {
+          "name": "Santos",
+          "wins": 2391,
+          "percent": 9.9625
+        },
+        {
+          "name": "Corinthians",
+          "wins": 2262,
+          "percent": 9.425
+        },
+        {
+          "name": "Fluminense",
+          "wins": 2410,
+          "percent": 10.041666666666666
+        },
+        {
+          "name": "Botafogo",
+          "wins": 2386,
+          "percent": 9.941666666666666
+        },
+        {
+          "name": "Grêmio",
+          "wins": 2545,
+          "percent": 10.604166666666666
+        },
+        {
+          "name": "Internacional",
+          "wins": 2397,
+          "percent": 9.9875
+        },
+        {
+          "name": "Cruzeiro",
+          "wins": 2346,
+          "percent": 9.775
+        }
+      ],
+      "maxWinnerDeviationSigma": 3.1199032511115306,
+      "maxPositionDeviationSigma": 3.1199032511115306,
+      "repeatedWinners": 2406,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Argentina",
+      "clubs": 6,
+      "draws": 24000,
+      "expectedPercent": 16.666666666666668,
+      "winners": [
+        {
+          "name": "Boca Juniors",
+          "wins": 3953,
+          "percent": 16.470833333333335
+        },
+        {
+          "name": "River Plate",
+          "wins": 4022,
+          "percent": 16.758333333333333
+        },
+        {
+          "name": "Racing Club",
+          "wins": 3975,
+          "percent": 16.5625
+        },
+        {
+          "name": "Independiente",
+          "wins": 4029,
+          "percent": 16.7875
+        },
+        {
+          "name": "San Lorenzo",
+          "wins": 4045,
+          "percent": 16.854166666666668
+        },
+        {
+          "name": "Estudiantes",
+          "wins": 3976,
+          "percent": 16.566666666666666
+        }
+      ],
+      "maxWinnerDeviationSigma": 0.8140638795573724,
+      "maxPositionDeviationSigma": 2.8752043405643364,
+      "repeatedWinners": 3950,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Japão",
+      "clubs": 4,
+      "draws": 24000,
+      "expectedPercent": 25,
+      "winners": [
+        {
+          "name": "Vissel Kobe",
+          "wins": 6122,
+          "percent": 25.508333333333333
+        },
+        {
+          "name": "Yokohama F. Marinos",
+          "wins": 5951,
+          "percent": 24.795833333333334
+        },
+        {
+          "name": "Urawa Red Diamonds",
+          "wins": 5931,
+          "percent": 24.7125
+        },
+        {
+          "name": "Kashima Antlers",
+          "wins": 5996,
+          "percent": 24.983333333333334
+        }
+      ],
+      "maxWinnerDeviationSigma": 1.8186686216998291,
+      "maxPositionDeviationSigma": 1.863389981249825,
+      "repeatedWinners": 5971,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Coreia do Sul",
+      "clubs": 4,
+      "draws": 24000,
+      "expectedPercent": 25,
+      "winners": [
+        {
+          "name": "Ulsan HD",
+          "wins": 5967,
+          "percent": 24.8625
+        },
+        {
+          "name": "Jeonbuk Hyundai Motors",
+          "wins": 6010,
+          "percent": 25.041666666666668
+        },
+        {
+          "name": "FC Seoul",
+          "wins": 6011,
+          "percent": 25.045833333333334
+        },
+        {
+          "name": "Pohang Steelers",
+          "wins": 6012,
+          "percent": 25.05
+        }
+      ],
+      "maxWinnerDeviationSigma": 0.49193495504995377,
+      "maxPositionDeviationSigma": 1.3118265467998766,
+      "repeatedWinners": 5998,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Estados Unidos",
+      "clubs": 6,
+      "draws": 24000,
+      "expectedPercent": 16.666666666666668,
+      "winners": [
+        {
+          "name": "Inter Miami",
+          "wins": 4066,
+          "percent": 16.941666666666666
+        },
+        {
+          "name": "LA Galaxy",
+          "wins": 4079,
+          "percent": 16.995833333333334
+        },
+        {
+          "name": "Los Angeles FC",
+          "wins": 3960,
+          "percent": 16.5
+        },
+        {
+          "name": "Atlanta United",
+          "wins": 4006,
+          "percent": 16.691666666666666
+        },
+        {
+          "name": "Seattle Sounders",
+          "wins": 3913,
+          "percent": 16.304166666666667
+        },
+        {
+          "name": "New York City FC",
+          "wins": 3976,
+          "percent": 16.566666666666666
+        }
+      ],
+      "maxWinnerDeviationSigma": 1.5068842025849234,
+      "maxPositionDeviationSigma": 2.615396719429005,
+      "repeatedWinners": 4110,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Escócia",
+      "clubs": 4,
+      "draws": 24000,
+      "expectedPercent": 25,
+      "winners": [
+        {
+          "name": "Celtic",
+          "wins": 6044,
+          "percent": 25.183333333333334
+        },
+        {
+          "name": "Rangers",
+          "wins": 6110,
+          "percent": 25.458333333333332
+        },
+        {
+          "name": "Aberdeen",
+          "wins": 5956,
+          "percent": 24.816666666666666
+        },
+        {
+          "name": "Heart of Midlothian",
+          "wins": 5890,
+          "percent": 24.541666666666668
+        }
+      ],
+      "maxWinnerDeviationSigma": 1.639783183499846,
+      "maxPositionDeviationSigma": 1.967739820199815,
+      "repeatedWinners": 5991,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Turquia",
+      "clubs": 4,
+      "draws": 24000,
+      "expectedPercent": 25,
+      "winners": [
+        {
+          "name": "Galatasaray",
+          "wins": 5932,
+          "percent": 24.716666666666665
+        },
+        {
+          "name": "Fenerbahçe",
+          "wins": 6043,
+          "percent": 25.179166666666667
+        },
+        {
+          "name": "Beşiktaş",
+          "wins": 5946,
+          "percent": 24.775
+        },
+        {
+          "name": "Trabzonspor",
+          "wins": 6079,
+          "percent": 25.329166666666666
+        }
+      ],
+      "maxWinnerDeviationSigma": 1.1776624681498893,
+      "maxPositionDeviationSigma": 1.371455026199871,
+      "repeatedWinners": 5974,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "África do Sul",
+      "clubs": 4,
+      "draws": 24000,
+      "expectedPercent": 25,
+      "winners": [
+        {
+          "name": "Mamelodi Sundowns",
+          "wins": 6014,
+          "percent": 25.058333333333334
+        },
+        {
+          "name": "Orlando Pirates",
+          "wins": 5972,
+          "percent": 24.883333333333333
+        },
+        {
+          "name": "Kaizer Chiefs",
+          "wins": 6096,
+          "percent": 25.4
+        },
+        {
+          "name": "SuperSport United",
+          "wins": 5918,
+          "percent": 24.658333333333335
+        }
+      ],
+      "maxWinnerDeviationSigma": 1.4310835055998654,
+      "maxPositionDeviationSigma": 2.608745973749755,
+      "repeatedWinners": 6118,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Todos os clubes",
+      "clubs": 108,
+      "draws": 54000,
+      "expectedPercent": 0.9259259259259259,
+      "winners": [
+        {
+          "name": "Sporting CP",
+          "wins": 521,
+          "percent": 0.9648148148148148
+        },
+        {
+          "name": "FC Porto",
+          "wins": 476,
+          "percent": 0.8814814814814815
+        },
+        {
+          "name": "SL Benfica",
+          "wins": 460,
+          "percent": 0.8518518518518519
+        },
+        {
+          "name": "SC Braga",
+          "wins": 539,
+          "percent": 0.9981481481481481
+        },
+        {
+          "name": "Vitória SC",
+          "wins": 501,
+          "percent": 0.9277777777777778
+        },
+        {
+          "name": "Boavista",
+          "wins": 475,
+          "percent": 0.8796296296296297
+        },
+        {
+          "name": "Rio Ave",
+          "wins": 532,
+          "percent": 0.9851851851851852
+        },
+        {
+          "name": "FC Famalicão",
+          "wins": 498,
+          "percent": 0.9222222222222223
+        },
+        {
+          "name": "Moreirense",
+          "wins": 496,
+          "percent": 0.9185185185185185
+        },
+        {
+          "name": "Gil Vicente",
+          "wins": 480,
+          "percent": 0.8888888888888888
+        },
+        {
+          "name": "Estoril Praia",
+          "wins": 500,
+          "percent": 0.9259259259259259
+        },
+        {
+          "name": "Santa Clara",
+          "wins": 478,
+          "percent": 0.8851851851851852
+        },
+        {
+          "name": "Arsenal",
+          "wins": 507,
+          "percent": 0.9388888888888889
+        },
+        {
+          "name": "Liverpool",
+          "wins": 495,
+          "percent": 0.9166666666666666
+        },
+        {
+          "name": "Manchester City",
+          "wins": 520,
+          "percent": 0.9629629629629629
+        },
+        {
+          "name": "Manchester United",
+          "wins": 498,
+          "percent": 0.9222222222222223
+        },
+        {
+          "name": "Chelsea",
+          "wins": 494,
+          "percent": 0.9148148148148149
+        },
+        {
+          "name": "Tottenham Hotspur",
+          "wins": 510,
+          "percent": 0.9444444444444444
+        },
+        {
+          "name": "Aston Villa",
+          "wins": 503,
+          "percent": 0.9314814814814815
+        },
+        {
+          "name": "Newcastle United",
+          "wins": 482,
+          "percent": 0.8925925925925926
+        },
+        {
+          "name": "Brighton",
+          "wins": 473,
+          "percent": 0.8759259259259259
+        },
+        {
+          "name": "Everton",
+          "wins": 510,
+          "percent": 0.9444444444444444
+        },
+        {
+          "name": "Nottingham Forest",
+          "wins": 486,
+          "percent": 0.9
+        },
+        {
+          "name": "West Ham United",
+          "wins": 534,
+          "percent": 0.9888888888888889
+        },
+        {
+          "name": "Real Madrid",
+          "wins": 467,
+          "percent": 0.8648148148148148
+        },
+        {
+          "name": "FC Barcelona",
+          "wins": 502,
+          "percent": 0.9296296296296296
+        },
+        {
+          "name": "Atlético de Madrid",
+          "wins": 498,
+          "percent": 0.9222222222222223
+        },
+        {
+          "name": "Athletic Club",
+          "wins": 493,
+          "percent": 0.912962962962963
+        },
+        {
+          "name": "Real Sociedad",
+          "wins": 494,
+          "percent": 0.9148148148148149
+        },
+        {
+          "name": "Real Betis",
+          "wins": 488,
+          "percent": 0.9037037037037037
+        },
+        {
+          "name": "Sevilla",
+          "wins": 503,
+          "percent": 0.9314814814814815
+        },
+        {
+          "name": "Valencia",
+          "wins": 528,
+          "percent": 0.9777777777777777
+        },
+        {
+          "name": "Villarreal",
+          "wins": 479,
+          "percent": 0.8870370370370371
+        },
+        {
+          "name": "Girona",
+          "wins": 502,
+          "percent": 0.9296296296296296
+        },
+        {
+          "name": "Inter",
+          "wins": 482,
+          "percent": 0.8925925925925926
+        },
+        {
+          "name": "AC Milan",
+          "wins": 496,
+          "percent": 0.9185185185185185
+        },
+        {
+          "name": "Juventus",
+          "wins": 504,
+          "percent": 0.9333333333333333
+        },
+        {
+          "name": "Napoli",
+          "wins": 453,
+          "percent": 0.8388888888888889
+        },
+        {
+          "name": "AS Roma",
+          "wins": 524,
+          "percent": 0.9703703703703703
+        },
+        {
+          "name": "Lazio",
+          "wins": 471,
+          "percent": 0.8722222222222222
+        },
+        {
+          "name": "Atalanta",
+          "wins": 508,
+          "percent": 0.9407407407407408
+        },
+        {
+          "name": "Fiorentina",
+          "wins": 480,
+          "percent": 0.8888888888888888
+        },
+        {
+          "name": "Bologna",
+          "wins": 500,
+          "percent": 0.9259259259259259
+        },
+        {
+          "name": "Torino",
+          "wins": 500,
+          "percent": 0.9259259259259259
+        },
+        {
+          "name": "Bayern München",
+          "wins": 549,
+          "percent": 1.0166666666666666
+        },
+        {
+          "name": "Borussia Dortmund",
+          "wins": 520,
+          "percent": 0.9629629629629629
+        },
+        {
+          "name": "Bayer Leverkusen",
+          "wins": 493,
+          "percent": 0.912962962962963
+        },
+        {
+          "name": "RB Leipzig",
+          "wins": 473,
+          "percent": 0.8759259259259259
+        },
+        {
+          "name": "Eintracht Frankfurt",
+          "wins": 494,
+          "percent": 0.9148148148148149
+        },
+        {
+          "name": "VfB Stuttgart",
+          "wins": 493,
+          "percent": 0.912962962962963
+        },
+        {
+          "name": "Werder Bremen",
+          "wins": 537,
+          "percent": 0.9944444444444445
+        },
+        {
+          "name": "Hamburger SV",
+          "wins": 484,
+          "percent": 0.8962962962962963
+        },
+        {
+          "name": "Paris Saint-Germain",
+          "wins": 479,
+          "percent": 0.8870370370370371
+        },
+        {
+          "name": "Olympique de Marseille",
+          "wins": 525,
+          "percent": 0.9722222222222222
+        },
+        {
+          "name": "Olympique Lyonnais",
+          "wins": 491,
+          "percent": 0.9092592592592592
+        },
+        {
+          "name": "AS Monaco",
+          "wins": 523,
+          "percent": 0.9685185185185186
+        },
+        {
+          "name": "Lille",
+          "wins": 519,
+          "percent": 0.9611111111111111
+        },
+        {
+          "name": "OGC Nice",
+          "wins": 502,
+          "percent": 0.9296296296296296
+        },
+        {
+          "name": "RC Lens",
+          "wins": 492,
+          "percent": 0.9111111111111111
+        },
+        {
+          "name": "Stade Rennais",
+          "wins": 551,
+          "percent": 1.0203703703703704
+        },
+        {
+          "name": "Ajax",
+          "wins": 508,
+          "percent": 0.9407407407407408
+        },
+        {
+          "name": "PSV",
+          "wins": 491,
+          "percent": 0.9092592592592592
+        },
+        {
+          "name": "Feyenoord",
+          "wins": 493,
+          "percent": 0.912962962962963
+        },
+        {
+          "name": "AZ Alkmaar",
+          "wins": 509,
+          "percent": 0.9425925925925925
+        },
+        {
+          "name": "FC Utrecht",
+          "wins": 487,
+          "percent": 0.9018518518518519
+        },
+        {
+          "name": "FC Twente",
+          "wins": 478,
+          "percent": 0.8851851851851852
+        },
+        {
+          "name": "Flamengo",
+          "wins": 535,
+          "percent": 0.9907407407407407
+        },
+        {
+          "name": "Palmeiras",
+          "wins": 473,
+          "percent": 0.8759259259259259
+        },
+        {
+          "name": "São Paulo",
+          "wins": 513,
+          "percent": 0.95
+        },
+        {
+          "name": "Santos",
+          "wins": 521,
+          "percent": 0.9648148148148148
+        },
+        {
+          "name": "Corinthians",
+          "wins": 507,
+          "percent": 0.9388888888888889
+        },
+        {
+          "name": "Fluminense",
+          "wins": 511,
+          "percent": 0.9462962962962963
+        },
+        {
+          "name": "Botafogo",
+          "wins": 525,
+          "percent": 0.9722222222222222
+        },
+        {
+          "name": "Grêmio",
+          "wins": 472,
+          "percent": 0.8740740740740741
+        },
+        {
+          "name": "Internacional",
+          "wins": 499,
+          "percent": 0.924074074074074
+        },
+        {
+          "name": "Cruzeiro",
+          "wins": 505,
+          "percent": 0.9351851851851852
+        },
+        {
+          "name": "Boca Juniors",
+          "wins": 479,
+          "percent": 0.8870370370370371
+        },
+        {
+          "name": "River Plate",
+          "wins": 484,
+          "percent": 0.8962962962962963
+        },
+        {
+          "name": "Racing Club",
+          "wins": 485,
+          "percent": 0.8981481481481481
+        },
+        {
+          "name": "Independiente",
+          "wins": 538,
+          "percent": 0.9962962962962963
+        },
+        {
+          "name": "San Lorenzo",
+          "wins": 483,
+          "percent": 0.8944444444444445
+        },
+        {
+          "name": "Estudiantes",
+          "wins": 483,
+          "percent": 0.8944444444444445
+        },
+        {
+          "name": "Vissel Kobe",
+          "wins": 491,
+          "percent": 0.9092592592592592
+        },
+        {
+          "name": "Yokohama F. Marinos",
+          "wins": 499,
+          "percent": 0.924074074074074
+        },
+        {
+          "name": "Urawa Red Diamonds",
+          "wins": 481,
+          "percent": 0.8907407407407407
+        },
+        {
+          "name": "Kashima Antlers",
+          "wins": 499,
+          "percent": 0.924074074074074
+        },
+        {
+          "name": "Ulsan HD",
+          "wins": 531,
+          "percent": 0.9833333333333333
+        },
+        {
+          "name": "Jeonbuk Hyundai Motors",
+          "wins": 492,
+          "percent": 0.9111111111111111
+        },
+        {
+          "name": "FC Seoul",
+          "wins": 500,
+          "percent": 0.9259259259259259
+        },
+        {
+          "name": "Pohang Steelers",
+          "wins": 494,
+          "percent": 0.9148148148148149
+        },
+        {
+          "name": "Inter Miami",
+          "wins": 494,
+          "percent": 0.9148148148148149
+        },
+        {
+          "name": "LA Galaxy",
+          "wins": 516,
+          "percent": 0.9555555555555556
+        },
+        {
+          "name": "Los Angeles FC",
+          "wins": 520,
+          "percent": 0.9629629629629629
+        },
+        {
+          "name": "Atlanta United",
+          "wins": 507,
+          "percent": 0.9388888888888889
+        },
+        {
+          "name": "Seattle Sounders",
+          "wins": 485,
+          "percent": 0.8981481481481481
+        },
+        {
+          "name": "New York City FC",
+          "wins": 492,
+          "percent": 0.9111111111111111
+        },
+        {
+          "name": "Celtic",
+          "wins": 483,
+          "percent": 0.8944444444444445
+        },
+        {
+          "name": "Rangers",
+          "wins": 510,
+          "percent": 0.9444444444444444
+        },
+        {
+          "name": "Aberdeen",
+          "wins": 490,
+          "percent": 0.9074074074074074
+        },
+        {
+          "name": "Heart of Midlothian",
+          "wins": 556,
+          "percent": 1.0296296296296297
+        },
+        {
+          "name": "Galatasaray",
+          "wins": 499,
+          "percent": 0.924074074074074
+        },
+        {
+          "name": "Fenerbahçe",
+          "wins": 511,
+          "percent": 0.9462962962962963
+        },
+        {
+          "name": "Beşiktaş",
+          "wins": 479,
+          "percent": 0.8870370370370371
+        },
+        {
+          "name": "Trabzonspor",
+          "wins": 518,
+          "percent": 0.9592592592592593
+        },
+        {
+          "name": "Mamelodi Sundowns",
+          "wins": 487,
+          "percent": 0.9018518518518519
+        },
+        {
+          "name": "Orlando Pirates",
+          "wins": 500,
+          "percent": 0.9259259259259259
+        },
+        {
+          "name": "Kaizer Chiefs",
+          "wins": 528,
+          "percent": 0.9777777777777777
+        },
+        {
+          "name": "SuperSport United",
+          "wins": 494,
+          "percent": 0.9148148148148149
+        }
+      ],
+      "maxWinnerDeviationSigma": 2.5160717045485623,
+      "maxPositionDeviationSigma": 3.908897112423659,
+      "repeatedWinners": 480,
+      "noExtremeDeviation": true
+    },
+    {
+      "name": "Shortlist personalizada",
+      "clubs": 5,
+      "draws": 30000,
+      "expectedPercent": 20,
+      "winners": [
+        {
+          "name": "Sporting CP",
+          "wins": 6015,
+          "percent": 20.05
+        },
+        {
+          "name": "FC Famalicão",
+          "wins": 6025,
+          "percent": 20.083333333333332
+        },
+        {
+          "name": "Newcastle United",
+          "wins": 5939,
+          "percent": 19.796666666666667
+        },
+        {
+          "name": "AC Milan",
+          "wins": 5978,
+          "percent": 19.926666666666666
+        },
+        {
+          "name": "San Lorenzo",
+          "wins": 6043,
+          "percent": 20.143333333333334
+        }
+      ],
+      "maxWinnerDeviationSigma": 0.8804591605141792,
+      "maxPositionDeviationSigma": 1.8042195912175802,
+      "repeatedWinners": 6047,
+      "noExtremeDeviation": true
+    }
+  ],
+  "browserAudit": {
+    "ceremonies": 120,
+    "clubs": 12,
+    "winners": {
+      "Moreirense": 10,
+      "FC Famalicão": 9,
+      "Boavista": 11,
+      "SL Benfica": 12,
+      "FC Porto": 20,
+      "Rio Ave": 5,
+      "Gil Vicente": 11,
+      "Vitória SC": 6,
+      "SC Braga": 8,
+      "Estoril Praia": 6,
+      "Santa Clara": 13,
+      "Sporting CP": 9
+    },
+    "uniqueOrders": 120,
+    "consecutiveRepeatedWinners": 5,
+    "allWinnersMatchNativeEntropy": true,
+    "allEliminationsMatchNativeEntropy": true,
+    "speedsTested": [
+      1,
+      2,
+      4
+    ]
+  }
+}
