@@ -1,10 +1,379 @@
-<!doctype html><html lang="pt"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101513"><title>The Draw — O teu próximo capítulo</title><link rel="stylesheet" href="/src/style.css"></head><body>
-<header><a class="brand" href="/" aria-label="The Draw início"><span class="brand-icon">◉</span> THE DRAW<span class="fm">FM27 EDITION</span></a><nav><button class="nav active" data-view="draw">Sala de sorteio</button><button class="nav" data-view="clubs">Explorar clubes</button><button class="nav" data-view="history">Os meus sorteios <span id="history-count">0</span></button></nav><span class="header-note"><i></i> O próximo save começa aqui</span></header>
-<main><div class="intro"><div><div class="eyebrow">UM NOVO CLUBE. UMA NOVA HISTÓRIA.</div><h1>O teu próximo capítulo<br>começa <em>no sorteio.</em></h1><p>Deixa o destino escolher o banco. O resto é contigo.</p></div><div class="edition"><span>THE DRAW</span><strong>20<span>27</span></strong><small>YOUR NEXT CHAPTER</small></div></div>
-<div id="draw-view" class="view"><div class="workspace"><aside class="panel"><div class="panel-title"><span>01</span><h2>Define o teu destino</h2><button id="reset" class="text-button">Limpar</button></div><div class="mode-switch"><button id="all-mode" class="selected">Explorar o mundo</button><button id="list-mode">A minha shortlist <b id="list-count">0</b></button></div><label for="country">PAÍS / REGIÃO</label><select id="country"><option value="">🌍 Todos os países</option></select><label for="league">LIGAS · CTRL / ⌘ PARA SELECIONAR VÁRIAS</label><select id="league" multiple size="3"><option value="">Todas as ligas</option></select><div class="line"></div><div class="small-heading"><h3>Clubes no pote</h3><span id="pool-count"></span></div><div class="search-wrap"><span>⌕</span><input id="search" placeholder="Procurar um clube…" aria-label="Procurar clube"></div><div id="club-list" class="club-list"></div><p class="list-help">☆ Adiciona à shortlist <span>× Exclui do sorteio</span></p><div class="pool-summary"><span class="globe">◎</span><div><strong id="eligible-count"></strong><small>Um deles pode mudar a tua história.</small></div></div></aside>
-<section class="stage" aria-label="Palco do sorteio"><div class="stage-top"><span><i></i> SALA DE SORTEIO</span><span id="stage-status">À ESPERA DO TEU DESTINO</span></div><div class="spotlight spot-left"></div><div class="spotlight spot-right"></div><div class="stage-content"><div class="stage-eyebrow">FOOTBALL MANAGER · THE DRAW</div><h2 id="stage-title">Milhares de histórias.<br><em>Um só destino.</em></h2><p id="stage-description">O próximo grande desafio está algures neste pote.</p><div class="bowl-area"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="draw-ball" id="draw-ball"><span>FM</span><strong>27</strong><small>THE DRAW</small></div><div class="bowl"><div class="mini-ball b1"></div><div class="mini-ball b2"></div><div class="mini-ball b3"></div><div class="mini-ball b4"></div><div class="mini-ball b5"></div><div class="bowl-glint"></div></div><div class="pedestal"></div></div><div id="result" hidden aria-live="polite"></div><div class="stage-caption" id="stage-caption"><span>✦</span> UMA BOLA. INFINITAS POSSIBILIDADES.</div></div><div class="stage-bottom"><span>● &nbsp; CERIMÓNIA VIRTUAL</span><span>O FUTEBOL ESCREVE-SE NO BANCO.</span></div></section></div>
-<div class="draw-bar"><div><span class="gold-icon">✧</span><div><strong>Pronto para conhecer o teu próximo clube?</strong><p>Todos os clubes elegíveis têm a mesma probabilidade.</p></div></div><div class="draw-actions"><label class="sound"><input type="checkbox" id="sound"> Som da cerimónia</label><button id="draw" class="primary">Começar o sorteio <span>↗</span></button></div></div>
-<div class="features"><article><span>◎</span><div><h3>O mundo é o teu campo</h3><p>Explora ligas e descobre um novo desafio.</p></div></article><article><span>☆</span><div><h3>A tua shortlist, o teu sorteio</h3><p>Os clubes que não te saem da cabeça, no mesmo pote.</p></div></article><article><span>◇</span><div><h3>Deixa espaço à surpresa</h3><p>O melhor save pode ser aquele que não planeaste.</p></div></article></div></div>
-<section id="clubs-view" class="view" hidden><div class="section-header"><div><h2>O mundo à tua espera.</h2><p>Adiciona clubes à shortlist ou importa a tua própria base.</p></div><button class="primary" id="import-button">Importar clubes JSON ↗</button><input type="file" id="import-file" accept="application/json,.json" hidden></div><p class="import-help">Formato: [{"name":"Clube", "country":"País", "league":"Liga"}]. A importação substitui a base local e é guardada neste navegador. A disponibilidade no FM27 deve ser confirmada por ti.</p><div id="catalog" class="catalog"></div></section>
-<section id="history-view" class="view" hidden><div class="section-header"><div><h2>Os primeiros capítulos.</h2><p>Os destinos que o sorteio te reservou.</p></div><button id="clear-history" class="text-button">Limpar histórico</button></div><div id="history" class="catalog"></div></section>
-<div class="data-note"><span>ⓘ</span><p><strong>Base de demonstração · <span id="data-count"></span> clubes</strong> — Lista parcial, sem confirmação de disponibilidade no FM27. Não é uma base oficial nem inclui todos os clubes jogáveis.</p><button id="explore-link" class="text-button">Explorar a base ↗</button></div><div id="toast" role="status"></div></main><footer><span class="footer-brand">◉ THE DRAW</span><span>Feito para quem vive o próximo save.</span><span>Projeto de fãs. Sem afiliação à Sports Interactive.</span></footer><script type="module" src="/src/app.js"></script></body></html>
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#080b14" />
+    <title>The Draw — Elimination room</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="/" aria-label="The Draw início"
+        ><span class="brand-symbol">D<span>↗</span></span
+        ><span
+          >THE<span class="brand-light">DRAW</span
+          ><small>FOOTBALL MANAGER · FAN PROJECT</small></span
+        ></a
+      >
+      <nav aria-label="Navegação principal">
+        <button class="nav active" data-view="draw">
+          <span>◈</span> Sala de sorteio</button
+        ><button class="nav" data-view="clubs"><span>⊞</span> Clubes</button
+        ><button class="nav" data-view="history">
+          <span>↺</span> Histórico <b id="history-count">0</b>
+        </button>
+      </nav>
+      <div class="header-tag">
+        <span class="status-dot"></span> ELIMINATION ROOM
+        <span class="version">V.02</span>
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+        <div>
+          <div class="eyebrow">
+            <span></span> O DESTINO NÃO SE ESCOLHE. SOBREVIVE-SE A ELE.
+          </div>
+          <h1>
+            Todos entram.<br class="mobile-break" />
+            <span>Só um fica.</span>
+          </h1>
+          <p>
+            Clube a clube. Eliminação a eliminação. Até encontrares o teu
+            próximo save.
+          </p>
+        </div>
+        <div class="intro-mark">
+          <span class="mark-lines">///</span>
+          <div>THE NEXT<br /><strong>CHAPTER IS YOURS.</strong></div>
+          <span class="edition">27</span>
+        </div>
+      </div>
+
+      <section id="draw-view" class="view">
+        <div class="room-layout">
+          <aside class="setup-panel panel" aria-label="Configurar sorteio">
+            <div class="panel-heading">
+              <div>
+                <span class="step-label">01 / CONFIGURAÇÃO</span>
+                <h2>Prepara o teu pote</h2>
+              </div>
+              <button id="reset" class="text-button">Repor</button>
+            </div>
+            <fieldset id="setup-fields">
+              <div class="mode-switch" aria-label="Origem dos clubes">
+                <button id="all-mode" class="selected" aria-pressed="true">
+                  Todo o mundo</button
+                ><button id="list-mode" aria-pressed="false">
+                  Shortlist <b id="list-count">0</b>
+                </button>
+              </div>
+              <label class="field-label" for="country">PAÍS</label
+              ><select id="country">
+                <option value="">Todos os países</option>
+              </select>
+              <div class="field-label filter-label">
+                LIGAS
+                <button id="clear-leagues" class="text-button">Todas</button>
+              </div>
+              <details id="league-picker" class="league-picker">
+                <summary>
+                  <span id="league-summary">Todas as ligas</span><span>⌄</span>
+                </summary>
+                <div id="league-options" class="league-options"></div>
+              </details>
+              <div class="club-list-heading">
+                <h3>Escolhe quem entra</h3>
+                <span id="pool-count"></span>
+              </div>
+              <div class="search-wrap">
+                <span aria-hidden="true">⌕</span
+                ><input
+                  id="search"
+                  type="search"
+                  placeholder="Pesquisar clube…"
+                  aria-label="Pesquisar clubes disponíveis"
+                />
+              </div>
+              <p class="selection-hint">
+                Pesquisa sem alterar o pote. Usa <strong>−</strong> para
+                excluir.
+              </p>
+              <div id="club-list" class="club-list"></div>
+              <button id="more-clubs" class="load-more" hidden>
+                Mostrar mais clubes
+              </button>
+            </fieldset>
+            <div class="pool-summary">
+              <span class="summary-symbol">⬡</span>
+              <div>
+                <strong id="eligible-count">0 clubes no pote</strong
+                ><small id="pool-description"
+                  >Todos com a mesma probabilidade.</small
+                >
+              </div>
+              <span class="status-dot"></span>
+            </div>
+          </aside>
+
+          <section class="arena panel" aria-label="Cerimónia de eliminação">
+            <div class="arena-top">
+              <span class="live-badge"
+                ><span class="status-dot"></span
+                ><span id="live-label">STANDBY</span></span
+              ><span>THE DRAW / ELIMINATION ENGINE</span
+              ><button
+                id="focus"
+                class="icon-button"
+                aria-label="Expandir palco"
+                aria-pressed="false"
+              >
+                ⛶
+              </button>
+            </div>
+            <div class="arena-grid"></div>
+            <div class="arena-glow"></div>
+            <div class="arena-coordinate coord-left">
+              41°09′ N<br />08°37′ W
+            </div>
+            <div class="arena-coordinate coord-right">
+              FM // 2027<br />NEW SAVE PROTOCOL
+            </div>
+            <div class="arena-content" id="arena-content">
+              <div class="stage-eyebrow" id="stage-eyebrow">
+                O TEU PRÓXIMO SAVE ESTÁ AQUI
+              </div>
+              <div class="reactor" id="reactor">
+                <div class="reactor-ring ring-outer"></div>
+                <div class="reactor-ring ring-middle"></div>
+                <div class="reactor-ring ring-inner"></div>
+                <div class="reactor-axis"></div>
+                <div class="reactor-core">
+                  <span>FM</span><strong>27</strong><small>THE DRAW</small>
+                </div>
+                <span class="orbit-dot dot-one"></span
+                ><span class="orbit-dot dot-two"></span
+                ><span class="reactor-label"
+                  >DESTINY ENGINE <b>● ONLINE</b></span
+                >
+              </div>
+              <div id="reveal-crest" hidden></div>
+              <h2 id="stage-title">
+                O próximo capítulo<br />é uma <em>incógnita.</em>
+              </h2>
+              <p id="stage-description">
+                Vê os clubes cair. Sente a tensão. Descobre quem fica.
+              </p>
+              <div id="finalists" class="finalists" hidden></div>
+              <div id="result-actions" class="result-actions" hidden>
+                <button id="share" class="secondary">Copiar resultado ↗</button
+                ><button id="exclude-result" class="secondary">
+                  Excluir vencedor e repetir
+                </button>
+              </div>
+              <div id="round-stamp" class="round-stamp">
+                PRONTO PARA COMEÇAR
+              </div>
+            </div>
+            <div class="arena-bottom">
+              <span id="round-label">ROUND 000</span
+              ><span class="signal-bars"
+                ><i></i><i></i><i></i><i></i><i></i></span
+              ><span id="arena-footer">O ÚLTIMO CLUBE É O TEU DESTINO</span>
+            </div>
+          </section>
+
+          <aside class="contenders-panel panel" aria-label="Clubes em jogo">
+            <div class="panel-heading">
+              <div>
+                <span class="step-label">02 / EM JOGO</span>
+                <h2>Ainda há uma hipótese</h2>
+              </div>
+              <span class="remaining-number" id="remaining-count">0</span>
+            </div>
+            <div class="progress-meta">
+              <span id="progress-label">À espera do sorteio</span
+              ><span id="progress-value">0%</span>
+            </div>
+            <div class="progress-track"><div id="progress-fill"></div></div>
+            <div
+              class="contender-tabs"
+              role="tablist"
+              aria-label="Estado dos clubes"
+            >
+              <button
+                id="remaining-tab"
+                class="selected"
+                role="tab"
+                aria-selected="true"
+              >
+                Em jogo <b id="remaining-tab-count">0</b></button
+              ><button id="eliminated-tab" role="tab" aria-selected="false">
+                Eliminados <b id="eliminated-count">0</b>
+              </button>
+            </div>
+            <div class="search-wrap live-search">
+              <span aria-hidden="true">⌕</span
+              ><input
+                id="live-search"
+                type="search"
+                placeholder="Procurar neste pote…"
+                aria-label="Pesquisar clubes em jogo ou eliminados"
+              />
+            </div>
+            <div
+              id="contenders"
+              class="contenders"
+              role="tabpanel"
+              aria-labelledby="remaining-tab"
+            ></div>
+            <button id="more-contenders" class="load-more" hidden>
+              Mostrar mais clubes
+            </button>
+            <div class="live-update" id="live-update">
+              <span class="status-dot"></span> A lista atualiza a cada
+              eliminação.
+            </div>
+          </aside>
+        </div>
+
+        <div class="control-deck panel">
+          <div class="deck-label">
+            <span class="deck-icon">▷</span>
+            <div>
+              <strong id="deck-title">O último a ficar ganha.</strong
+              ><small id="deck-description"
+                >Uma eliminação de cada vez. Sem atalhos para o destino.</small
+              >
+            </div>
+          </div>
+          <div class="playback">
+            <label class="sound-toggle"
+              ><input type="checkbox" id="sound" /><span>♫</span> Som</label
+            ><label class="speed-label" for="speed"
+              >Ritmo<select id="speed">
+                <option value="1">Cinemático</option>
+                <option value="2">Rápido · 2×</option>
+                <option value="4">Turbo · 4×</option>
+              </select></label
+            ><button id="draw" class="primary">
+              Iniciar eliminação <span>↗</span>
+            </button>
+            <div id="session-controls" class="session-controls" hidden>
+              <button id="pause" class="secondary">Ⅱ Pausar</button
+              ><button
+                id="next"
+                class="secondary"
+                title="Avançar uma eliminação"
+              >
+                Próxima →</button
+              ><button
+                id="cancel"
+                class="icon-button cancel"
+                aria-label="Cancelar sorteio"
+              >
+                ×
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="how-it-works">
+          <div>
+            <span>01</span>
+            <p><strong>Define o universo.</strong> Ligas ou a tua shortlist.</p>
+          </div>
+          <span class="step-connector">···········</span>
+          <div>
+            <span>02</span>
+            <p>
+              <strong>Assiste às eliminações.</strong> Um clube de cada vez.
+            </p>
+          </div>
+          <span class="step-connector">···········</span>
+          <div>
+            <span>03</span>
+            <p>
+              <strong>Abraça o destino.</strong> O sobrevivente é o teu save.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="clubs-view" class="view" hidden>
+        <div class="section-header">
+          <div>
+            <span class="step-label">DATABASE / CLUB EXPLORER</span>
+            <h2>O teu universo de clubes.</h2>
+            <p>
+              Um clique para adicionar à shortlist. Outro para mudar de ideias.
+            </p>
+          </div>
+          <div class="catalog-actions">
+            <button id="restore-data" class="secondary" hidden>
+              Restaurar demonstração</button
+            ><button class="primary" id="import-button">
+              Importar clubes JSON ↗</button
+            ><input
+              type="file"
+              id="import-file"
+              accept="application/json,.json"
+              hidden
+            />
+          </div>
+        </div>
+        <div class="search-wrap catalog-search">
+          <span>⌕</span
+          ><input
+            id="catalog-search"
+            type="search"
+            placeholder="Pesquisar por clube, país ou liga…"
+            aria-label="Pesquisar catálogo"
+          />
+        </div>
+        <p class="import-help">
+          Importa um array JSON com name, country e league. Substitui a base
+          deste navegador. A compatibilidade com FM27 deve ser confirmada por
+          ti.
+        </p>
+        <div id="catalog" class="catalog"></div>
+        <button id="more-catalog" class="load-more" hidden>
+          Mostrar mais clubes
+        </button>
+      </section>
+      <section id="history-view" class="view" hidden>
+        <div class="section-header">
+          <div>
+            <span class="step-label">ARCHIVE / YOUR NEXT CHAPTERS</span>
+            <h2>Os destinos que ficaram.</h2>
+            <p>Sorteios concluídos, guardados neste navegador.</p>
+          </div>
+          <button id="clear-history" class="secondary">Limpar histórico</button>
+        </div>
+        <div id="history" class="catalog"></div>
+      </section>
+      <div class="data-note">
+        <span class="data-badge">DEMO DATA</span>
+        <p>
+          <strong id="data-count"></strong> · Base parcial. Disponibilidade no
+          FM27 não confirmada. Sem afiliação à Sports Interactive.
+        </p>
+        <button id="explore-link" class="text-button">Explorar base ↗</button>
+      </div>
+    </main>
+    <footer>
+      <span class="footer-brand">THE DRAW <b>↗</b></span
+      ><span>YOUR NEXT CHAPTER STARTS WITH ONE CLUB.</span
+      ><span>FEITO PARA QUEM VIVE O PRÓXIMO SAVE.</span>
+    </footer>
+    <div id="toast" role="status"></div>
+    <div
+      id="announcer"
+      class="sr-only"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></div>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
